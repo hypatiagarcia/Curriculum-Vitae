@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #759bd1;
+    --text-color: #727171;
+}
+html {
+    font-size: 10px;
+}
+body {
+    font-family: Inter, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* Estilos comunes */
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.descripcion{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+.titulo{
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.grupo1{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.grupo2{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.grupo3 {
+    max-width: 700px;
+	width: 100%;
+	margin: 0 auto;
+	grid-column: 1/-1;
+	display: flex;
+	flex-direction: row;
+	gap: 5rem;
+}
+.group-3 > div {
+	flex: 1;
+}
+/* Layouts */
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background: #070707;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+@media only screen and (max-width: 768px){
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+}
+.perfil{
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+}
+
+/* Perfil */
+.perfil_container{
+    display: flex;
+    gap: 2rem;
+
+}
+.perfil_img{
+    max-width: 250px;
+}
+.perfil_nombre{
+    max-width: 250px;
+    color: var(--primary-color);
+    font-weight: 200;
+    font-size: clamp(2rem, 8vw, 4rem);
+    display: block;
+}
+.perfil_titulo{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.btndescarga{
+    display: block;
+    text-decoration: underline;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+.btndescarga:hover{
+    color: var(--primary-color);
+}
+@media only screen and (max-width: 760px){
+    .perfil_container{
+        flex-direction: column;
+    }
+}
+.identacion{
+    margin-left: 20px;
+}
+.habilidades_lista{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 2;
+}
+/* Educación y cursos */
+.educacion_item{
+    margin-top: 2rem;
+}
+.ano_ciudad{
+    font-size: 1.3rem;
+    color: var(--text-color);
+    font-weight: 300;
+}
+.item_titulo{
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 500;
+    margin: 0,8rem 0;
+}
+.item_subtitulo{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
+.contacto, .social {
+    flex: 1; 
+    margin: 0 1rem; 
+}
+
+.info_social a {
+    display: block; 
+    margin-top: 1rem; 
+    color: var(--text-color);
+}
+
+.info_social a:hover {
+    color: var(--primary-color); 
+    text-decoration: underline; 
+}
+hr {
+	grid-column: 1/-1;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 5rem;
+	margin-bottom: 1rem;
+	border: none;
+	border-top: 2px solid rgba(128, 128, 128, 0.229);
+}
+
